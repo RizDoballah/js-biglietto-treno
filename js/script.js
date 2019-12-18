@@ -6,15 +6,17 @@
   var prezzo = numero * 0.21;
   console.log(prezzo);
   var prezzoMinorenni = (prezzo -(prezzo * 20) / 100);
-  console.log(prezzoMinorenni);
+  // console.log(prezzoMinorenni);
   var prezzoOver = (prezzo -(prezzo * 40) / 100);
-  console.log(prezzoOver);
- if (eta > 18) {
-console.log('pari');
-  var risultatoPariDispari = 'pari';
+  // console.log(prezzoOver);
+ if (eta < 18) {
+  alert(prezzoMinorenni);
+} else if (eta > 65) {
+  alert(prezzoOver);
 } else {
-  var risultatoPariDispari = 'dispari';
- }
+  alert(prezzo);
+}
+
 
 
 
