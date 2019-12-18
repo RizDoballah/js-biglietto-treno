@@ -1,4 +1,4 @@
-  alert('Hello World!');
+  // alert('Hello World!');
   var numero = parseInt(prompt('inserisci il numero di chilometri'));
   console.log(numero);
   var eta = parseInt(prompt('inserisci la tua eta'));
@@ -16,6 +16,9 @@
 } else {
   alert(prezzo);
 }
+document.getElementById('prezzo-base').innerHTML= 'Con un viaggio di 80km, il prezzo base sarà di € '+ prezzo;
+document.getElementById('offertra-young').innerHTML= 'la tua tariffa sarà di € '+ prezzoMinorenni + ' rispetto a € ' + prezzo;
+document.getElementById('offerta-senior').innerHTML='la tua tariffa sarà di € '+ prezzoOver + ' rispetto a € ' + prezzo;
 
 
 
